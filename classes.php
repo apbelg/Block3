@@ -2,7 +2,7 @@
 /**
  * Настольная лампа
  */
-class tableLamp
+class TableLamp
 {
   public $color;
   public $power;
@@ -38,7 +38,7 @@ class tableLamp
 /**
  * Автомобильный навигатор
  */
-class navigator
+class Navigator
 {
   public $razmerDisplay;
   public $typeOS;
