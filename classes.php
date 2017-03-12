@@ -83,7 +83,7 @@ class Books
   public $autor;
   public $kolPage;
   public $category;
-  public $price;
+  private $price;
   private $kodISBN;
 
   public function setPrice($priceReal=0)
@@ -93,6 +93,14 @@ class Books
   public function getPrice()
   {
       return $this->price;
+  }
+  public function setISBN($kodISBN)
+  {
+    $this->kodISBN = $kodISBN;
+  }
+  public function getISBN()
+  {
+      return $this->kodISBN;
   }
 }
 
