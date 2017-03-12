@@ -74,6 +74,45 @@ class Navigator
   }
 
 }
+/**
+ * Книга
+ */
+class Books
+{
+  public $title;
+  public $autor;
+  public $kolPage;
+  public $category;
+  public $price;
+  private $kodISBN;
+
+  public function setPrice($priceReal=0)
+  {
+    $this->price = $priceReal;
+  }
+  public function getPrice()
+  {
+      return $this->price;
+  }
+}
+
+/**
+ * Комментарий
+ */
+class Comments
+{
+  public $text;
+  private $idNews;
+  private $dateComments;
+  private $idUser;
+
+  function __construct($currentIdNews, $currentDate, $currentIdUser)
+  {
+         $this->idNews = $currentIdNews;
+         $this->dateComment = $currentDate;
+         $this->idUser = $currentIdUser;
+  }
+}
 
 
  ?>
